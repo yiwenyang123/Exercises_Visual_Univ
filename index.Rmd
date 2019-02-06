@@ -43,7 +43,7 @@ head(eduwa$LocaleType,50) #first fifty values
 table(eduwa$LocaleType,exclude = 'nothing')
 ```
 
-```{r freqTab_rel, eval=FALSE}
+```{r freqTab_rel, eval=TRUE}
 # relative values
 absoluteT=table(eduwa$LocaleType,exclude = 'nothing')
 prop.table(absoluteT)
