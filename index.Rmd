@@ -43,16 +43,15 @@ head(eduwa$LocaleType,50) #first fifty values
 table(eduwa$LocaleType,exclude = 'nothing')
 ```
 
-Plot 1:
-
-```{r freqTab_rel, eval=TRUE}
+```{r freqTab_rel, eval=FALSE}
 # relative values
 absoluteT=table(eduwa$LocaleType,exclude = 'nothing')
 prop.table(absoluteT)
 ```
 
+Plot 1:
 
-```{r pieBasic, eval=FALSE}
+```{r pieBasic, eval=TRUE}
 # the pie plots the table:
 ToPlot=prop.table(absoluteT)
 pie(ToPlot)
